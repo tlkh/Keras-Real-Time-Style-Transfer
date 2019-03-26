@@ -58,6 +58,7 @@ def flip(x, flipMode):
 class ImageLoader(Sequence):
     def __init__(self, files, img_size = (256, 256), batchSize = 16, flip=False):
         self.files = files
+        print(len(files))
         self.batchSize = batchSize
         self.img_size = img_size
         self.flip = flip
